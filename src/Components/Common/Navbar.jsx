@@ -4,8 +4,14 @@ import { BiSearch } from "react-icons/bi";
 import { FaRegUser } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { navLinks } from "../../../Utils";
+import fetchApi from "../../Api";
+
 
 const Navbar = () => {
+  
+  useEffect(() => {
+    fetchApi()
+  })
   const [active, setActive] = useState(-1);
   const navRef = useRef();
   useEffect(() => {
