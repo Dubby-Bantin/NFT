@@ -4,22 +4,15 @@ import { BiSearch } from "react-icons/bi";
 import { FaRegUser } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { navLinks } from "../../../Utils";
-import fetchApi from "../../Api";
-
 
 const Navbar = () => {
-  
-  useEffect(() => {
-    fetchApi()
-  })
   const [active, setActive] = useState(-1);
   const navRef = useRef();
   useEffect(() => {
-    window.addEventListener("scroll", () => {
-      window.scrollY > 10
-        ? navRef.current.classList.add("shadow-md")
-        : navRef.current.classList.remove("shadow-md");
-    });
+    window.addEventListener(
+      "scroll",
+      () => window.scrollY > 10 && navRef.current.classList.add("shadow-md")
+    );
   }, []);
 
   return (
@@ -27,7 +20,7 @@ const Navbar = () => {
       ref={navRef}
       className="top-0 z-10 sticky flex justify-between items-center backdrop-blur-lg p-5 transition-all duration-700"
     >
-      <img src={NFT__LOGO} alt="" className="h-10" /> 
+      <img src={NFT__LOGO} alt="" className="h-10" />
       <ul className="md:flex items-center gap-10 hidden text-white">
         {navLinks.map(({ link, href }, i) => (
           <Link
