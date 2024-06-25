@@ -3,7 +3,7 @@ import NFT__LOGO from "../../assets/Images/NFT LOGO.png";
 import { BiSearch } from "react-icons/bi";
 import { FaRegUser } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import { navLinks } from "../../../utils";
+import { navLinks } from "../../utils";
 import { RiCloseFill, RiMenu3Line } from "react-icons/ri";
 
 const Navbar = () => {

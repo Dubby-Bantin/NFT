@@ -8,8 +8,13 @@ body {
     #1a0229 65%,
     #2c0143 85%
   );
-  /* min-height: fit-content; */
+  scroll-behavior: smooth;
+  /* min-height: 100dvh; */
   text-transform: uppercase;
+}
+
+.home__container::-webkit-scrollbar {
+  display: none;
 }
 
 .mobile__nav {
@@ -22,6 +27,17 @@ body {
     #2c0143 85%
   );
   animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.gradient {
+  background: radial-gradient(
+    circle at 40% 80%,
+    #45016c 0%,
+    #251337 23%,
+    #040013 47%,
+    #1a0229 65%,
+    #2c0143 85%
+  );
 }
 
 @keyframes slide-top {
@@ -80,4 +96,20 @@ body::-webkit-scrollbar-track {
 .border-x-gradient {
   border-block: 1px solid;
   border-image: linear-gradient(to right, #ff01f7 50%, #762ffe 80%) 1;
+}
+
+@media (max-width: 1090px) {
+  .bt {
+    border-right: 1px solid;
+    border-image: linear-gradient(to right, #ff01f7, #9c22fc, #762ffe) 1;
+  }
+}
+
+.arrow {
+  filter: drop-shadow(10px 7px 10px rgb(62, 1, 88));
+}
+
+.filter__button {
+  border: 1px solid;
+  border-image: linear-gradient(to right, #7304bd 50%, #92018d 80%) 1;
 }
