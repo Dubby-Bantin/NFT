@@ -1,56 +1,5 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
-body {
-    background: radial-gradient(circle at 0% 20%,
-            #45016c 0%,
-            #251337 23%,
-            #040013 47%,
-            #1A0229 65%,
-            #2c0143 85%);
-    /* min-height: fit-content; */
-    text-transform: uppercase;
-}
-
-.user {
-    background: radial-gradient(circle at 0% 20%,
-            #8161FF 0%,
-            #FB58F5);
-}
-
-body::-webkit-scrollbar {
-    background: 0;
-}
-
-body::-webkit-scrollbar-thumb {
-    background: linear-gradient(to right,
-            #45016c 0%,
-            #251337 23%,
-            #040013 67%,
-            #1A0229 65%,
-            #2c0143 100%);
-    border-radius: 50px;
-}
-
-body::-webkit-scrollbar-track {
-    background: linear-gradient(to left,
-            #45016c 0%,
-            #251337 23%,
-            #040013 67%,
-            #1A0229 65%,
-            #2c0143 100%);
-    /* border-radius: 50px; */
-}
-
-.playIcon {
-    background: radial-gradient(circle at 0% 10%,
-            #2400B4 0%,
-            #FF2DF8);
-}
-
-.border-gradient {
-    @apply border-y-2;
-    border-image: linear-gradient(90deg, #FF01F7, #762FFE) 1 ;
-}

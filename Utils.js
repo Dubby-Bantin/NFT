@@ -5,4 +5,11 @@ const navLinks = [
   { link: "Collections", href: "/collections" },
 ];
 
-export { navLinks}
+const countInfo = [
+  { end: 50, duration: 2.5, text: "Our Active", text2: "User" },
+  { end: 43, duration: 2.5, text: "Our", text2: "Art Work" },
+  { end: 38, duration: 2.5, text: "Available", text2: "Artist" },
+  { end: 34, duration: 2.5, text: "Our", text2: "Products" },
+];
+
+export { navLinks, countInfo };

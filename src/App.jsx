@@ -1,5 +1,5 @@
-import React from "react";
 import AppRoutes from "./Components/Routes/AppRoute";
+import "./style.css";
 
 const App = () => {
   return <AppRoutes />;
