@@ -8,7 +8,7 @@ import {
   IoIosArrowForward,
 } from "react-icons/io";
 
-const ArtWork = () => {
+const ArtWork2 = () => {
   const [selectedIndex, setSelectedIndex] = useState("ALL NFT'S");
   const [active, setActive] = useState(artWorks[0]);
   const carousel = useRef();
@@ -93,4 +93,4 @@ const ArtWork = () => {
   );
 };
 
-export default ArtWork;
+export default ArtWork2;
