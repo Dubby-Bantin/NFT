@@ -1,6 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import { artWorks, filterArtButtons } from "../../utils";
-import { Swiper, SwiperSlide } from "swiper/react";
+import { artWorks2, filterArtButtons } from "../../utils";
 
 import "swiper/css";
 import { IoIosArrowDown } from "react-icons/io";
@@ -20,7 +19,7 @@ const ArtWork2 = () => {
 
   const handleCategoryClick = (category) => {
     setSelectedIndex(category);
-    const selectedCards = artWorks
+    const selectedCards = artWorks2
       .filter((art) => art.category === category)
       .slice(0, 3);
     setFilteredCards(selectedCards);

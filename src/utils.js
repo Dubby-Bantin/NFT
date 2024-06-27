@@ -4,6 +4,9 @@ import art3 from "./assets/Images/art3.png";
 import art4 from "./assets/Images/art5.png";
 import art8 from "./assets/Images/art8.png";
 import art9 from "./assets/Images/art9.png";
+import slide1 from "./assets/Images/slide1.png";
+import slide2 from "./assets/Images/slide2.png";
+import slide3 from "./assets/Images/slide3.png";
 
 import pilotMonkey from "./assets/Images/pilotMonkey.png";
 
@@ -29,7 +32,9 @@ const filterArtButtons = [
   "TRENDING CARDS",
 ];
 
-const artWorks = [
+const artWorks1 = [slide1, slide2, slide3];
+
+const artWorks2 = [
   {
     image: art1,
     category: "ALL NFT'S",
@@ -121,4 +126,13 @@ const artWorks = [
   },
 ];
 
-export { navLinks, countInfo, artWorks, filterArtButtons, art1, art2, art3 };
+export {
+  navLinks,
+  countInfo,
+  artWorks1,
+  artWorks2,
+  filterArtButtons,
+  art1,
+  art2,
+  art3,
+};
