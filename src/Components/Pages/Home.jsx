@@ -4,7 +4,7 @@ import Stats from "../Home/Banner/Stats";
 
 const Home = () => {
   return (
-    <div className="font-Montserrat overflow-x-hidden overflow-y-scroll home__container">
+    <div className="font-Montserrat">
       <Banner />
       <Stats />
       <ArtWork2 />

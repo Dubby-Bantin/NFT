@@ -9,7 +9,7 @@ body {
     #2c0143 85%
   );
   scroll-behavior: smooth;
-  /* min-height: 100dvh; */
+  min-height: 250dvh;
   text-transform: uppercase;
 }
 
@@ -31,8 +31,8 @@ body {
 
 .gradient {
   background: radial-gradient(
-    circle at 40% 80%,
-    #45016c 0%,
+    circle at 40% 85%,
+    #45016c 5%,
     #251337 23%,
     #040013 47%,
     #1a0229 65%,

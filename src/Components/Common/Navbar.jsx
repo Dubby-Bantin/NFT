@@ -10,17 +10,17 @@ const Navbar = () => {
   const [isOpen, setIsopen] = useState(false);
   const [active, setActive] = useState(-1);
   const navRef = useRef();
-  useEffect(() => {
-    window.addEventListener("scroll", () =>
-      window.scrollY > 10
-        ? navRef.current.classList.add("shadow-md")
-        : navRef.current.classList.remove("shadow-md")
-    );
-  }, []);
+  // useEffect(() => {
+  //   window.addEventListener("scroll", () =>
+  //     window.scrollY > 10
+  //       ? navRef.current.classList.add("shadow-md")
+  //       : navRef.current.classList.remove("shadow-md")
+  //   );
+  // }, []);
 
   return (
     <header
-      ref={navRef}
+      // ref={navRef}
       className="top-0 z-10 sticky flex justify-between items-center backdrop-blur-lg p-5 transition-all duration-700 font-Montserrat"
     >
       <Link to={"/"}>
