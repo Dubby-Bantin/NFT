@@ -4,11 +4,11 @@ import art3 from "./assets/Images/art3.png";
 import art4 from "./assets/Images/art5.png";
 import art8 from "./assets/Images/art8.png";
 import art9 from "./assets/Images/art9.png";
-import slide1 from "./assets/Images/slide1.png";
-import slide2 from "./assets/Images/slide2.png";
-import slide3 from "./assets/Images/slide3.png";
-
+import art10 from "./assets/Images/art10.png";
+import art12 from "./assets/Images/art12.png";
+import art14 from "./assets/Images/art14.png";
 import pilotMonkey from "./assets/Images/pilotMonkey.png";
+import { Children } from "react";
 
 const navLinks = [
   { link: "Marketplace", href: "/market" },
@@ -32,7 +32,7 @@ const filterArtButtons = [
   "TRENDING CARDS",
 ];
 
-const artWorks1 = [slide1, slide2, slide3];
+const artWorks1 = [art1, art2, art3, art10, art12, art14];
 
 const artWorks2 = [
   {
@@ -126,6 +126,36 @@ const artWorks2 = [
   },
 ];
 
+const footerLinks = [
+  {
+    header: "Marketplace",
+    children: [
+      { label: "Explore", path: "/" },
+      { label: "NFTs", path: "/" },
+      { label: "Collectibles", path: "/" },
+      { label: "Virtualyreality", path: "/" },
+    ],
+  },
+  {
+    header: "Company",
+    children: [
+      { label: "About Us", path: "/" },
+      { label: "Support", path: "/" },
+      { label: "Careers", path: "/" },
+      { label: "Newsletter", path: "/" },
+    ],
+  },
+  {
+    header: "Resourses",
+    children: [
+      { label: "Partners", path: "/" },
+      { label: "Blogs", path: "/" },
+      { label: "Help Center", path: "/" },
+      { label: "Live Action", path: "/" },
+    ],
+  },
+];
+
 export {
   navLinks,
   countInfo,
@@ -135,4 +165,5 @@ export {
   art1,
   art2,
   art3,
+  footerLinks,
 };

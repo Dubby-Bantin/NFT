@@ -4,15 +4,14 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#324321",
-        secondary: "#a49f67",
+        footer: "#08061F",
       },
       fontFamily: {
         Montserrat: ["Montserrat Alternates", "sans-serif"],
       },
     },
     screens: {
-      xs: "480px",
+      xs: "300px",
       ss: "620px",
       sm: "768px",
       md: "1060px",

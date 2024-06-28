@@ -9,7 +9,7 @@ body {
     #2c0143 85%
   );
   scroll-behavior: smooth;
-  min-height: 250dvh;
+  /* min-height: 100dvh; */
   text-transform: uppercase;
 }
 
@@ -39,6 +39,7 @@ body {
     #2c0143 85%
   );
 }
+
 
 @keyframes slide-top {
   0% {
@@ -112,4 +113,14 @@ body::-webkit-scrollbar-track {
 .filter__button {
   border: 1px solid;
   border-image: linear-gradient(to right, #7304bd 50%, #92018d 80%) 1;
+}
+
+.filter__button2 {
+  border: 4px solid;
+  border-image: linear-gradient(to right, #7304bd 50%, #92018d 80%) 1;
+}
+
+.line {
+  border: 0.5px solid;
+  border-image: linear-gradient(to left, #7304bd 50%, #92018d 80%) 1;
 }

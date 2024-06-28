@@ -14,7 +14,7 @@ const ArtWork2 = () => {
 
   const prevSlide = () => {
     setCurrentIndex((p) => (p - 1) % filteredCards.length);
-    currentIndex < 1 && setCurrentIndex(0);
+    currentIndex < 1 && setCurrentIndex(filteredCards.length - 1);
   };
 
   const handleCategoryClick = (category) => {
@@ -30,7 +30,7 @@ const ArtWork2 = () => {
   }, []);
 
   return (
-    <section className="relative">
+    <section className="relative flex flex-col items-center gap-3 mb-24">
       <h1 className="text-white text-center font-bold text-[2rem] mb-5">
         Featured Artwork Collection
       </h1>
@@ -73,34 +73,33 @@ const ArtWork2 = () => {
       {/* buttons for slide */}
 
       {/* slider images */}
-      <div className="photo__cards flex flex-wrap gap-[10rem] justify-center">
-        {filteredCards.map(
-          ({ id, image, category, rotateLeft, rotateRight }, i) => (
-            <div
-              key={id}
-              className={`gradient filter__button ${
-                rotateLeft && "lg:-rotate-[25deg]"
-              } md:${rotateRight && " lg:rotate-[25deg]"} ${
-                (rotateRight || rotateLeft) && " lg:relative top-[10rem]"
-              } h-[25rem] w-[20rem] flex justify-center items-end duration-1000 delay-75 ${
-                i === currentIndex ? "opacity-100" : "lg:opacity-15"
-              }`}
-            >
-              <img
-                className={`object-contain h-[20rem]  ${
-                  i == 0 &&
-                  " lg:rotate-[29.8deg] rotate-[29deg]  relative top-[1.9rem]"
-                } ${
-                  i == 2 &&
-                  " lg:-rotate-[29.8deg] -rotate-[29deg]  relative top-[1.9rem]"
-                } `}
-                src={image}
-                alt=""
-              />
-            </div>
-          )
-        )}
+      <div className="photo__cards flex flex-wrap gap-[10rem] cursor-pointer xs:overflow-hidden md:overflow-visible justify-center lg:mb-56 mb-10">
+        {filteredCards.map(({ id, image, rotateLeft, rotateRight }, i) => (
+          <div
+            key={id}
+            className={`gradient filter__button group overflow-hidden ${
+              rotateLeft && "lg:-rotate-[25deg]"
+            } md:${rotateRight && " lg:rotate-[25deg]"} ${
+              (rotateRight || rotateLeft) && " lg:relative top-[10rem]"
+            } h-[25rem] w-[20rem]  flex justify-center items-end duration-1000 delay-75 ${
+              i === currentIndex ? "opacity-100" : "lg:opacity-15"
+            }`}
+          >
+            <img
+              className={`object-contain h-[20rem] group-hover:scale-125 transition-all duration-1000  ${
+                i == 0 &&
+                " lg:rotate-[29.8deg] rotate-[30deg]  relative top-[1.9rem]"
+              } ${
+                i == 2 &&
+                " lg:-rotate-[29.8deg] -rotate-[30deg]  relative top-[1.9rem]"
+              } `}
+              src={image}
+              alt=""
+            />
+          </div>
+        ))}
       </div>
+      <div className="line w-1/3"></div>
     </section>
   );
 };
