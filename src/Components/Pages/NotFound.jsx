@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 const NotFound = () => {
   const navigate = useNavigate();
   return (
-    <div className="text-white flex flex-col items-center">
+    <div className="text-white flex flex-col items-center font-Montserrat">
       <h1>
         SORRY, SEEMS LIKE U NAVIGATED TO A WRONG PAGE.... or THIS PAGE COULD
         STILL BE UNDER CONSTRUCTION
@@ -15,7 +15,7 @@ const NotFound = () => {
       <div className="flex items-center gap-10">
         <button
           onClick={() => navigate("/")}
-          className={`py-[.8rem] px-[2rem] text-[12px] filter__button `}
+          className={`py-[.8rem] px-[2rem] hover:bg-purple-950/10 text-[12px] filter__button `}
         >
           HOME
         </button>
