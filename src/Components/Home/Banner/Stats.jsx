@@ -14,7 +14,7 @@ const Stats = () => {
           <div
             key={i}
             className={`flex items-center sm:gap-10 gap-24 xs:px-3 sm:px-5  px-10 md:border-y-0 md:${
-              i != 3 && " border-gradient sm:border-r"
+              i != 3 && " border-gradient md:border-r"
             }  ${i == 3 && "bt border-r-0"}  border-x-0 border-t w-full`}
           >
             <h1 className="py-[5px] font-bold text-[40px] md:flex-none flex-1 sm:w-full w-1/4 md:w-[30%]">

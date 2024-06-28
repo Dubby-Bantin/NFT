@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import NFT__LOGO from "../../assets/Images/NFT LOGO.png";
 import { BiSearch } from "react-icons/bi";
 import { FaRegUser } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { navLinks } from "../../utils";
 import { RiCloseFill, RiMenu3Line } from "react-icons/ri";
 
@@ -10,7 +10,10 @@ const Navbar = () => {
   const [isOpen, setIsopen] = useState(false);
   const [active, setActive] = useState(-1);
   const navRef = useRef();
+  const { pathname } = useLocation();
+
   useEffect(() => {
+    console.log(location);
     window.addEventListener("scroll", () =>
       window.scrollY > 10
         ? navRef.current.classList.add("shadow-md")
@@ -30,9 +33,8 @@ const Navbar = () => {
       <ul className="sm:flex items-center gap-10 hidden text-white">
         {navLinks.map(({ link, href }, i) => (
           <Link
-            onClick={() => setActive(i)}
             key={link}
-            className={i == active && "text-blue-900"}
+            className={pathname == href && "text-blue-900"}
             to={href}
           >
             {link}
@@ -73,9 +75,8 @@ const Navbar = () => {
         <ul className="flex flex-col gap-10 text-white items-center">
           {navLinks.map(({ link, href }, i) => (
             <Link
-              onClick={() => setActive(i)}
               key={link}
-              className={i == active && "text-blue-900"}
+              className={pathname == href && "text-blue-900"}
               to={href}
             >
               {link}
