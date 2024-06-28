@@ -2,7 +2,7 @@ import {
   FaFacebookF,
   FaLinkedinIn,
   FaSquareInstagram,
-  FaX,
+  FaXTwitter,
 } from "react-icons/fa6";
 import NFT__LOGO from "../../assets/Images/NFT LOGO.png";
 import { Link } from "react-router-dom";
@@ -26,7 +26,7 @@ const Footer = () => {
             <FaSquareInstagram />
           </button>
           <button className="bg-[#22053e80] p-3 rounded-full">
-            <FaX />
+            <FaXTwitter />
           </button>
         </div>
         <p className="lg:top-10 relative">
