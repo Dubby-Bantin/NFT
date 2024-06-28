@@ -75,6 +75,7 @@ const Navbar = () => {
         <ul className="flex flex-col gap-10 text-white items-center">
           {navLinks.map(({ link, href }, i) => (
             <Link
+              onClick={() => setIsopen(false)}
               key={link}
               className={pathname == href && "text-blue-900"}
               to={href}
