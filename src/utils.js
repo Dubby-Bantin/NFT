@@ -8,7 +8,12 @@ import art10 from "./assets/Images/art10.png";
 import art12 from "./assets/Images/art12.png";
 import art14 from "./assets/Images/art14.png";
 import pilotMonkey from "./assets/Images/pilotMonkey.png";
-import { Children } from "react";
+import {
+  FaFacebookF,
+  FaLinkedinIn,
+  FaSquareInstagram,
+  FaXTwitter,
+} from "react-icons/fa6";
 
 const navLinks = [
   { link: "Marketplace", href: "/market" },
@@ -126,6 +131,8 @@ const artWorks2 = [
   },
 ];
 
+const footerIcons = [FaFacebookF, FaLinkedinIn, FaSquareInstagram, FaXTwitter];
+
 const footerLinks = [
   {
     header: "Marketplace",
@@ -166,4 +173,5 @@ export {
   art2,
   art3,
   footerLinks,
+  footerIcons,
 };

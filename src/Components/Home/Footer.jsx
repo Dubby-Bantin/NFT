@@ -6,7 +6,7 @@ import {
 } from "react-icons/fa6";
 import NFT__LOGO from "../../assets/Images/NFT LOGO.png";
 import { Link } from "react-router-dom";
-import { footerLinks } from "../../utils";
+import { footerIcons, footerLinks } from "../../utils";
 
 const Footer = () => {
   return (
@@ -16,18 +16,11 @@ const Footer = () => {
           <img src={NFT__LOGO} alt="" className="h-10" />
         </Link>
         <div className="flex items-center text-white gap-5">
-          <button className="bg-[#22053e80] p-3 rounded-full">
-            <FaFacebookF />
-          </button>
-          <button className="bg-[#22053e80] p-3 rounded-full">
-            <FaLinkedinIn />
-          </button>
-          <button className="bg-[#22053e80] p-3 rounded-full">
-            <FaSquareInstagram />
-          </button>
-          <button className="bg-[#22053e80] p-3 rounded-full">
-            <FaXTwitter />
-          </button>
+          {footerIcons.map((Icon, i) => (
+            <button key={i} className="bg-[#22053e80] p-3 rounded-full">
+              <Icon />
+            </button>
+          ))}
         </div>
         <p className="lg:top-10 relative">
           copyright @2022 NFT. All right reserved
