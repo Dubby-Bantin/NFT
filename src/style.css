@@ -40,7 +40,6 @@ body {
   );
 }
 
-
 @keyframes slide-top {
   0% {
     -webkit-transform: translateY(100px);
@@ -115,12 +114,18 @@ body::-webkit-scrollbar-track {
   border-image: linear-gradient(to right, #7304bd 50%, #92018d 80%) 1;
 }
 
-.filter__button2 {
-  border: 4px solid;
-  border-image: linear-gradient(to right, #7304bd 50%, #92018d 80%) 1;
-}
 
 .line {
   border: 0.5px solid;
   border-image: linear-gradient(to left, #7304bd 50%, #92018d 80%) 1;
+}
+
+
+.swiper-pagination-bullet-active {
+  background-color: #6f42c1;
+}
+
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
 }

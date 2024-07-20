@@ -37,7 +37,7 @@ const filterArtButtons = [
   "TRENDING CARDS",
 ];
 
-const artWorks1 = [art1, art2, art3, art10, art12, art14];
+const artWorks1 = [art1, art2, art3, pilotMonkey];
 
 const artWorks2 = [
   {
