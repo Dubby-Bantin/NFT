@@ -6,7 +6,7 @@ const Banner = () => (
   <div className="flex ss:flex-row flex-col justify-between items-center text-white md:mb-[2.27rem] ss:mb-[4.37rem] ">
     <div className="md:p-11 p-5 pt-10">
       <p className="font-bold text-[1.5rem] md:text-[3rem] md:w-[65%]">
-        Discover,Collect & Sell Popular <span>NFT'S</span>
+        Discover,Collect & Sell Popular <span>NFT`S</span>
       </p>
       <p className="mb-9 md:mb-0 md:w-[30rem]">
         The world’s Biggest advanced commercial center for Crypto collectibles

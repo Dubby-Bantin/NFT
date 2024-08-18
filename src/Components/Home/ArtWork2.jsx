@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { artWorks2, filterArtButtons } from "../../utils";
 
 import "swiper/css";

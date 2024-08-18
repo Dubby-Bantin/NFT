@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import NFT__LOGO from "../../assets/Images/NFT LOGO.png";
 import { BiSearch } from "react-icons/bi";
 import { FaRegUser } from "react-icons/fa";
@@ -8,7 +8,6 @@ import { RiCloseFill, RiMenu3Line } from "react-icons/ri";
 
 const Navbar = () => {
   const [isOpen, setIsopen] = useState(false);
-  const [active, setActive] = useState(-1);
   const navRef = useRef();
   const { pathname } = useLocation();
 
@@ -31,7 +30,7 @@ const Navbar = () => {
       </Link>
 
       <ul className="sm:flex items-center gap-10 hidden text-white">
-        {navLinks.map(({ link, href }, i) => (
+        {navLinks.map(({ link, href }) => (
           <Link
             key={link}
             className={pathname == href && "text-blue-900"}
@@ -73,7 +72,7 @@ const Navbar = () => {
           <FaRegUser className="text-[#001A72]" />
         </div>
         <ul className="flex flex-col gap-10 text-white items-center">
-          {navLinks.map(({ link, href }, i) => (
+          {navLinks.map(({ link, href }) => (
             <Link
               onClick={() => setIsopen(false)}
               key={link}

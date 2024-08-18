@@ -4,9 +4,6 @@ import art3 from "./assets/Images/art3.png";
 import art4 from "./assets/Images/art5.png";
 import art8 from "./assets/Images/art8.png";
 import art9 from "./assets/Images/art9.png";
-import art10 from "./assets/Images/art10.png";
-import art12 from "./assets/Images/art12.png";
-import art14 from "./assets/Images/art14.png";
 import pilotMonkey from "./assets/Images/pilotMonkey.png";
 import {
   FaFacebookF,

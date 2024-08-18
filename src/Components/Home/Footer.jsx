@@ -1,9 +1,3 @@
-import {
-  FaFacebookF,
-  FaLinkedinIn,
-  FaSquareInstagram,
-  FaXTwitter,
-} from "react-icons/fa6";
 import NFT__LOGO from "../../assets/Images/NFT LOGO.png";
 import { Link } from "react-router-dom";
 import { footerIcons, footerLinks } from "../../utils";
