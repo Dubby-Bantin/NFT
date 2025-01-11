@@ -9,7 +9,6 @@ body {
     #2c0143 85%
   );
   scroll-behavior: smooth;
-  /* min-height: 100dvh; */
   text-transform: uppercase;
 }
 
